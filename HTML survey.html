@@ -16,12 +16,50 @@
         </p>
         <!--Survey starts here-->
         <form id="survey-form">
-            <div>
-                <label id="name">
-                    Name
-                </label>
-            </div>
+            <label id="name-label"> Name </label>
+            <input 
+            id="name"
+            type="text" 
+            name="name"
+            placeholder="Please type in your name" required/>  
+            <label id="email-label">Email</label>
+                <input 
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="Please enter your email"
+                    required/>
+            <label id="number-label"> Phone </label>
+                <input
+                id="number"
+                type="number"
+                name="number"
+                min="11"
+                max="15"
+                placeholder="Phone number"
+                required/>
+            <!--Dropdown--> 
+            <p>What's your occupation</p>
+            <select id="dropdown" name="role" required>
+                <option disabled selected value>Select current role</option>
+                <option value="blacksmith">Blacksmith</option>
+                <option value="falconer">Falconer</option>
+                <option value="armorer">Armorer</option>
+                <option value="cobbler">Cobbler</option>
+            <!--Radio-->
+            <p>Can you use lightsaber? </p>
+            <label> What's that? </label>
+                    <input
+                      name="user-recommend"
+                      value="definitely"
+                      type="radio"
+                      class="input-radio"
+                      checked
+                    />Definitely
+            </label>
         </form>
+
+
         
     </body> 
 </html>
