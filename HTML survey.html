@@ -8,11 +8,13 @@
         <meta name="author" content="Anna" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     </head>
+    <!--Navigation bar needs to be done-->
+
     <!-- Body starts here-->
     <body>
         <!--USER STORY #2 -->
         <p id="description">
-            This is a survey form done as part of FCC responsive desing projects.     
+            This is a survey form done as a part of FCC responsive desing projects.     
         </p>
         <!--Survey starts here-->
         <form id="survey-form">
@@ -21,13 +23,13 @@
             id="name"
             type="text" 
             name="name"
-            placeholder="Please type in your name" required/>  
+            placeholder="John Smith" required/>  
             <label id="email-label">Email</label>
                 <input 
                     id="email"
                     type="email"
                     name="email"
-                    placeholder="Please enter your email"
+                    placeholder="example@email.com"
                     required/>
             <label id="number-label"> Phone </label>
                 <input
@@ -36,10 +38,10 @@
                 name="number"
                 min="11"
                 max="15"
-                placeholder="Phone number"
+                placeholder="070000000000"
                 required/>
-            <!--Dropdown--> 
-            <div>
+           
+                <!--Dropdown--> 
             <p>What's your occupation</p>
             <select id="dropdown" name="role" required>
                 <option disabled selected value>Select current role</option>
@@ -48,18 +50,32 @@
                 <option value="armorer">Armorer</option>
                 <option value="cobbler">Cobbler</option>
             </select>
-            </div>
+            
             <!--Radio-->
             <p>Can you use lightsaber? </p>
             <label> What's that? </label>
                     <input
-                      name="user-recommend"
-                      value="definitely"
+                      value="What's that??"
                       type="radio"
                       class="input-radio"
-                      checked
-                    />Definitely
-        
+                       />
+            <label> No, I cannot sing </label>
+                    <input
+                         value="No, I cannot sing"
+                         type="radio"
+                         class="input-radio"
+                          />
+                          <!--Comments section-->
+            <p>What should we change??</p>
+                <textarea
+                    id="comments"
+                    class="input-textarea"
+                    name="comment"
+                    placeholder="Type here all recommendations..."
+                ></textarea>
+            <button type="submit" id="submit" class="submit-button">
+                 Submit
+                 </button>
         </form>
 
 
